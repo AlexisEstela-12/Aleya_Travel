@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply font-Monserrat dark:bg-gray-900
+}
+
+/* NAVBAR SECTION */
+nav{
+    @apply w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800
+}
+.Tittle_Container{
+    @apply h-auto w-auto
+}
+.Tittle_Container > p{
+    @apply text-xl text-primary font-black dark:text-white
+}
+.URL_Section{
+    @apply flex space-x-8
+}
+
+.URL_Section > a{
+    @apply font-bold text-sm text-primary dark:text-white
+} 
+.SVG {
+    @apply fill-current dark:text-white
+}
+
+/* BIG CONTAINER*/
+section{
+    @apply h-full w-full mb-6
+}
+
+/* HOME SECTION */
+#home{
+    @apply w-full h-4/6 relative
+}
+.Info{
+    @apply w-full flex flex-col space-y-80 top-20 items-center absolute lg:space-y-0 lg:items-start lg:pt-2 lg:justify-start 
+}
+.Info input{
+    @apply w-64 h-12 rounded-full p-3 outline-none transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-10/12 lg:hidden
+}
+.Text_lg {
+    @apply hidden h-auto lg:w-2/5 lg:flex lg:pb-6
+}
+.Text_lg p {
+    @apply text-2xl ml-16 font-bold text-black
+}
+.Info  button{
+    @apply w-5/12 lg:w-3/12 h-14 bg-white rounded-full text-primary font-bold shadow-sm text-lg transition duration-500 ease-in-out hover:bg-primary hover:text-white transform  hover:scale-110 lg:ml-16 hover:-translate-y-1
+}
+.Home_img_container{
+    @apply w-full h-full lg:h-96  lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center
+}
+.Home_img_container img{
+    @apply object-cover h-full w-full lg:hidden
+}
+
+/* OUR Recomendations SECTION */
+#Recommend{
+    @apply w-full h-3/6 p-2 
+}
+.Recommend_Tittle{
+    @apply text-3xl font-semibold text-primary p-3 dark:text-white
+}
+
+.Cards_container{
+    @apply container w-auto h-72 items-start mt-4 overflow-x-auto overscroll-x-contain flex flex-row space-x-4
+}
+.Card{
+    @apply w-40 h-5/6 shadow-md rounded-lg flex-shrink-0 transform transition-all hover:-translate-y-4 hover:shadow-xl
+}
+.Card > div:nth-child(1){
+    @apply w-full h-3/5 rounded-t-lg bg-cover
+} 
+.Card > div:nth-child(2){
+    @apply w-full h-2/5 rounded-b-lg bg-secondary dark:bg-gray-700
+}
+.Card > div:nth-child(2) > p:first-child {
+    @apply text-white font-bold text-lg px-4 py-2
+}
+.Card > div:nth-child(2) > p:nth-child(2) {
+    @apply text-white text-sm px-4
+}
+.CardTittle{
+    @apply text-3xl px-8 pt-8 pb-1 font-semibold text-white
+}
+
+/* Trending Stays SECTION */
+
+#Trending_Stays{
+    @apply px-2  h-auto w-full lg:px-6
+}
+.Trending_Tittle{
+    @apply text-3xl text-primary font-semibold pb-6 dark:text-white
+}
+.Container_pictures{
+    @apply w-full h-full flex flex-col  items-center justify-center
+}
+.Container_pictures > div:nth-child(1) { /* Image chicago */
+    @apply w-full h-96 bg-cover rounded-xl mb-8 bg-center dark:text-gray-700
+}
+.Text_img { /* text img */
+    @apply text-lg pl-8 text-white mr-12
+}
+
+.Sub_Container { /* sub Container pictures */
+    @apply lg:flex lg:h-full lg:w-full lg:space-x-4
+}
+
+.Sub_Container > div:nth-child(1){
+    /* Image chicago Los Angeles */
+    @apply w-full h-96 bg-LA bg-cover rounded-xl mb-8 lg:h-auto dark:text-gray-700
+}
+
+.Sub_Sub_Container { /* sub sub Container pictures */
+    @apply h-full w-full 
+}
+
+.Sub_Sub_Container > div{
+    /* Image Miami y bali */
+    @apply w-full h-96 bg-cover mb-8 rounded-xl dark:text-gray-700
+}
+
+/* FAQs SECTION */
+
+#FAQS{
+    @apply w-full h-96
+}
+.FAQS_container{
+    @apply w-full h-full px-6 flex flex-col space-y-4
+}
+.FAQS_title{
+    @apply text-3xl text-primary font-semibold mt-6 dark:text-white
+}
+.question{
+    @apply text-xl font-medium text-primary dark:text-white
+}
+.explain{
+    @apply text-sm pt-2 dark:text-white
+}
+
+/* footer SECTION */
+
+footer {  /* id="#AboutUs" */
+    @apply w-full h-auto bg-gray-50 p-6 space-y-2
+}
+
+footer > p:nth-child(1){
+    @apply text-lg
+}
+
+.footer_info{
+    @apply text-sm  text-gray-300
+}
+
+/* Tab_bar SECTION */
+
+#tab_bar{
+    @apply w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-gray-800
+}
+
+.SVG_style{
+    @apply fill-current text-gray-200
+}
